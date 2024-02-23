@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Lambda",
+      "request": "attach",
+      "type": "node",
+      "port": 9229,
+      "preLaunchTask": "Wait Remote Debugger Server",
+      "remoteRoot": "/var/task",
+      "localRoot": "${workspaceFolder}/dist",
+      "sourceMaps": true,
+      "outFiles": ["${workspaceFolder}/dist/**/**.js"],
+      "skipFiles": ["<node_internals>/**/*.js"]
+    }
+  ]
+}

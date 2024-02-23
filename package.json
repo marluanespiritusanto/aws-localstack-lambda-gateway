@@ -1,0 +1,27 @@
+{
+  "name": "aws-localstack",
+  "version": "1.0.0",
+  "description": "Test your AWS code locally",
+  "main": "dist/index.js",
+  "author": "Marluan Espiritusanto",
+  "private": false,
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --minify --sourcemap --platform=node --target=es2020 --outfile=dist/index.js"
+  },
+  "keywords": [
+    "localstack",
+    "aws",
+    "lambda",
+    "typescript",
+    "esbuild",
+    "api-gateway"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.134",
+    "esbuild": "^0.20.1"
+  },
+  "dependencies": {
+    "axios": "^1.6.7"
+  }
+}
